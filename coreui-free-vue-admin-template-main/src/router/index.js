@@ -35,22 +35,22 @@ const routes = [
         component: () => import('@/views/theme/Typography.vue'),
       },
       {
-        path: '/base',
+        path: '/unit-work',
         name: 'Công việc đơn vị',
         component: {
           render() {
             return h(resolveComponent('router-view'))
           },
         },
-        redirect: '/base/breadcrumbs',
+        redirect: '/unit-work/breadcrumbs',
         children: [
           {
-            path: '/base/accordion',
+            path: '/unit-work/accordion',
             name: 'Dashboard công việc đơn vị',
             component: () => import('@/views/base/Accordion.vue'),
           },
           {
-            path: '/base/breadcrumbs',
+            path: '/unit-work/list-work',
             name: 'Danh sách công việc đơn vị',
             component: () => import('@/views/base/Breadcrumbs.vue'),
           },
@@ -144,52 +144,52 @@ const routes = [
         ],
       },
       {
-        path: '/forms',
+        path: '/personal-work',
         name: 'Công việc cá nhân',
         component: {
           render() {
             return h(resolveComponent('router-view'))
           },
         },
-        redirect: '/forms/form-control',
+        redirect: '/personal-work/form-control',
         children: [
           {
-            path: '/forms/form-control',
+            path: '/personal-work/form-control',
             name: 'Dashboard công việc cá nhân',
             component: () => import('@/views/forms/FormControl.vue'),
           },
           {
-            path: '/forms/select',
+            path: '/personal-work/list-work',
             name: 'Danh sách công việc cá nhân',
             component: () => import('@/views/forms/Select.vue'),
           },
           {
-            path: '/forms/checks-radios',
+            path: '/personal-work/checks-radios',
             name: 'Mẫu công việc',
             component: () => import('@/views/forms/ChecksRadios.vue'),
           },
           {
-            path: '/forms/range',
+            path: '/personal-work/range',
             name: 'Mẫu quy trình',
             component: () => import('@/views/forms/Range.vue'),
           },
           {
-            path: '/forms/input-group',
+            path: '/personal-work/input-group',
             name: 'Danh sách quy trình',
             component: () => import('@/views/forms/InputGroup.vue'),
           },
           {
-            path: '/forms/floating-labels',
+            path: '/personal-work/floating-labels',
             name: 'Floating Labels',
             component: () => import('@/views/forms/FloatingLabels.vue'),
           },
           {
-            path: '/forms/layout',
+            path: '/personal-work/layout',
             name: 'Layout',
             component: () => import('@/views/forms/Layout.vue'),
           },
           {
-            path: '/forms/validation',
+            path: '/personal-work/validation',
             name: 'Validation',
             component: () => import('@/views/forms/Validation.vue'),
           },

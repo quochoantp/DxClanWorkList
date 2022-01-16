@@ -32,18 +32,18 @@ export default [
   {
     component: 'CNavGroup',
     name: 'Công việc đơn vị',
-    to: '/base',
+    to: '/unitwork',
     icon: 'cil-puzzle',
     items: [
       {
         component: 'CNavItem',
         name: 'Dashboard công việc đơn vị',
-        to: '/base/accordion',
+        to: '/unit-work/accordion',
       },
       {
         component: 'CNavItem',
         name: 'Danh sách công việc đơn vị',
-        to: '/base/breadcrumbs',
+        to: '/unit-work/list-work',
       },
       // {
       //   component: 'CNavItem',
@@ -133,33 +133,33 @@ export default [
   {
     component: 'CNavGroup',
     name: 'Công việc cá nhân',
-    to: '/forms',
+    to: '/personal-work',
     icon: 'cil-notes',
     items: [
       {
         component: 'CNavItem',
         name: 'Dashboard công việc cá nhân',
-        to: '/forms/form-control',
+        to: '/personal-work/form-control',
       },
       {
         component: 'CNavItem',
         name: 'Danh sách công việc cá nhân',
-        to: '/forms/select',
+        to: '/personal-work/list-work',
       },
       {
         component: 'CNavItem',
         name: 'Mẫu công việc',
-        to: '/forms/checks-radios',
+        to: '/personal-work/checks-radios',
       },
       {
         component: 'CNavItem',
         name: 'Mẫu quy trình',
-        to: '/forms/range',
+        to: '/personal-work/range',
       },
       {
         component: 'CNavItem',
         name: 'Danh sách quy trình',
-        to: '/forms/input-group',
+        to: '/personal-work/input-group',
       },
       // {
       //   component: 'CNavItem',
