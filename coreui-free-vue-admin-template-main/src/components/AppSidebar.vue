@@ -22,7 +22,7 @@
         :icon="logoNegative"
         :height="35"
       /> -->
-      <span>DxClan</span>
+      <div style="font-weight: 600px; font-size: 25px">DxClan</div>
     </CSidebarBrand>
     <AppSidebarNav />
     <CSidebarToggler

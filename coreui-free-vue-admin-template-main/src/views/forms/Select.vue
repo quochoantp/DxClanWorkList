@@ -594,6 +594,10 @@ export default {
       visibleTree: false,
     }
   },
+  setup() {
+    document.title = 'Danh sách công việc cá nhân'
+  },
+
   methods: {
     // dangbang() {
     //   this.visibleTable = true

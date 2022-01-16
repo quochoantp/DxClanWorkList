@@ -407,6 +407,9 @@ export default {
       visibleFilter: false,
     }
   },
+  setup() {
+    document.title = 'Danh sách công việc đơn vị'
+  },
 }
 </script>
 
